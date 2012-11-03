@@ -1,0 +1,12 @@
+#ifndef MERGESORT_GLOBAL_H
+#define MERGESORT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MERGESORT_LIBRARY)
+#  define MERGESORTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MERGESORTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MERGESORT_GLOBAL_H
